@@ -1,13 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Slide Curso JavaScript</title>
+  <title>MEU PROJETO 5</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
 </head>
+
 <body>
-  <script type="module" src="js/script.js"></script>
+  <header class="header">
+    <div class="header-container">
+      <a href="#" class="logo"> Robben </a>
+      <ul>
+        <li><a href="#">Masculino</a></li>
+        <li><a href="#">Feminino</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="banner">
+    <div class="imgbx">
+      <img src="img/background-intro1.jpg" class="active">
+      <img src="img/background-intro2.jpg">
+      <img src="img/background-intro3.jpg">
+    </div>
+
+    <div class="contentbx-container">
+      <div class="contentbx">
+        <div class="active">
+          <h2>Elbow-Patch<br>
+            Leather Jacket</h2>
+          <p>Casual line. Short desaign. 100% suede leather.<br>
+            backstitched ekbiw oatch</p>
+          <h3>R$ 195.00</h3>
+          <a href="#">Comprar</a>
+        </div>
+
+        <div>
+          <h2>Bolsa Monalisa<br>
+            Couro</h2>
+          <p>Casual line. Short desaign. 100% suede leather.<br>
+            backstitched ekbiw oatch</p>
+          <h3>R$ 100.00</h3>
+          <a href="#">Comprar</a>
+        </div>
+
+        <div>
+          <h2>Mochila Nike<br>
+            Brasília </h2>
+          <p>Casual line. Short desaign. 100% suede leather.<br>
+            backstitched ekbiw oatch</p>
+          <h3>R$ 250.00</h3>
+          <a href="#">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <ul class="controls">
+      <li onclick="PrevSlide();PrevSlideText();"></li>
+      <li onclick="nextSlide();nextSlideText();"></li>
+    </ul>
+  </section>
+
+
+  <section class="produtos">
+    <div class="produtos-container">
+      <div class="tenis-text">
+        <h3>Winter sale</h3>
+        <h2><span>30% </span>SALE OFF<br>
+          Snearkes</h2>
+        <p>Discoun 30% for all shoe & snearkes<br>
+          Limited time offer, don’t miss out!</p>
+        <a href="#">Comprar</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="roupas">
+    <ul class="custom-controls">
+      <li><img src="img/camisa-brasil-thumb.png" alt=""></li>
+      <li><img src="img/camisa-2-thumb.png" alt=""></li>
+      <li><img src="img/camisa-brasil-thumb.png" alt=""></li>
+      <li><img src="img/camisa-2-thumb.png" alt=""></li>
+
+    </ul>
+
+    <div class="slide-wrapper">
+      <ul class="slide">
+        <li>
+          <h2>Camisa</h2>
+          <div class="img-slide"><img src="img/camisa-brasil.png" alt=""></div>
+          <p>R$ 250,00</p>
+          <div class="buton">
+            <a href="#">Comprar</a>
+          </div>
+          <h3>Discoun 30% for all shoe & snearkes Limited time offer,<br>
+            don’t miss out!</h3>
+        </li>
+        <li>
+          <h2>Camisa</h2>
+          <div class="img-slide"><img src="img/camisa-2.png" alt=""></div>
+          <p>R$ 250,00</p>
+          <div class="buton">
+            <a href="#">Comprar</a>
+          </div>
+          <h3>Discoun 30% for all shoe & snearkes Limited time offer,<br>
+            don’t miss out!</h3>
+
+        </li>
+        <li>
+          <h2>Camisa</h2>
+          <div class="img-slide"><img src="img/camisa-brasil.png" alt=""></div>
+          <p>R$ 250,00</p>
+          <div class="buton">
+            <a href="#">Comprar</a>
+          </div>
+          <h3>Discoun 30% for all shoe & snearkes Limited time offer,<br>
+            don’t miss out!</h3>
+
+        </li>
+        <li>
+          <h2>Camisa</h2>
+          <div class="img-slide"><img src="img/camisa-2.png" alt=""></div>
+          <p>R$ 250,00</p>
+          <div class="buton">
+            <a href="#">Comprar</a>
+          </div>
+          <h3>Discoun 30% for all shoe & snearkes Limited time offer,<br>
+            don’t miss out!</h3>
+
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="galeria">
+    <div class="galeria-container">
+      <h2>Coleções</h2>
+      <div class="galeria-itens1">
+        <div class="galeria-item-1">
+          <a href="#"><img src="img/img-galeria-1.png" alt=""> </a>
+        </div>
+        <div class="galeria-item-1">
+          <a href="#"><img src="img/img-galeria-2.png" alt=""> </a>
+        </div>
+      </div>
+
+      <div class="galeria-itens2">
+        <div class="galeria-item-1">
+          <a href="#"><img src="img/img-galeria-3.png" alt=""> </a>
+        </div>
+        <div class="galeria-item-1">
+          <a href="#"><img src="img/img-galeria-4.png" alt=""> </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <p>ESSE É UM PROJETO FEITO POR ROBSON SANTOS</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/script.js">
+  </script>
+  <!-- SLIDE DO BACKGROUND-NTRO -->
+  <script type="text/javascript">
+    const imgbx = document.querySelector('.imgbx');
+    const slides = imgbx.getElementsByTagName('img');
+    var i = 0;
+
+    function nextSlide() {
+      slides[i].classList.remove('active');
+      i = (i + 1) % slides.length;
+      slides[i].classList.add('active');
+    }
+
+    function PrevSlide() {
+      slides[i].classList.remove('active');
+      i = (i - 1 + slides.length) % slides.length;
+      slides[i].classList.add('active');
+    }
+
+    /* TEXT*/
+    const contentbx = document.querySelector('.contentbx');
+    const slidesText = contentbx.getElementsByTagName('div');
+    var j = 0;
+
+    function nextSlideText() {
+      slidesText[j].classList.remove('active');
+      j = (j + 1) % slidesText.length;
+      slidesText[j].classList.add('active');
+    }
+
+    function PrevSlideText() {
+      slidesText[j].classList.remove('active');
+      j = (j - 1 + slidesText.length) % slidesText.length;
+      slidesText[j].classList.add('active');
+    }
+  </script>
 </body>
+
 </html>
